@@ -29,6 +29,12 @@ describe('app routes', () => {
           'mix ingredients',
           'put dough on cookie sheet',
           'bake for 10 minutes'
+        ],
+        ingredients: [
+          { amount: 20,  
+            measurement: 'cup',
+            name: 'butter'
+          }
         ]
       })
       .then(res => {
@@ -40,6 +46,11 @@ describe('app routes', () => {
             'mix ingredients',
             'put dough on cookie sheet',
             'bake for 10 minutes'
+          ],
+          ingredients: [
+            { _id: expect.any(String), amount: 20,
+              measurement: 'cup',
+              name: 'butter' }
           ],
           __v: 0
         });
@@ -74,6 +85,12 @@ describe('app routes', () => {
         'put dough on cookie sheet',
         'bake for 10 minutes'
       ],
+      ingredients: [
+        { amount: 20,  
+          measurement: 'cup',
+          name: 'butter'
+        }
+      ],
     });
     return request(app)
       .get(`/api/v1/recipes/${recipe._id}`)
@@ -86,6 +103,11 @@ describe('app routes', () => {
             'mix ingredients',
             'put dough on cookie sheet',
             'bake for 10 minutes'
+          ],
+          ingredients: [
+            { _id: expect.any(String), amount: 20,
+              measurement: 'cup',
+              name: 'butter' }
           ],
           __v: 0
         });
@@ -100,6 +122,12 @@ describe('app routes', () => {
         'mix ingredients',
         'put dough on cookie sheet',
         'bake for 10 minutes'
+      ],
+      ingredients: [
+        { amount: 20,  
+          measurement: 'cup',
+          name: 'butter'
+        }
       ],
     });
 
@@ -116,6 +144,11 @@ describe('app routes', () => {
             'put dough on cookie sheet',
             'bake for 10 minutes'
           ],
+          ingredients: [
+            { _id: expect.any(String), amount: 20,
+              measurement: 'cup',
+              name: 'butter' }
+          ],
           __v: 0
         });
       });
@@ -128,6 +161,12 @@ describe('app routes', () => {
         'mix ingredients',
         'put dough on cookie sheet',
         'bake for 10 minutes'
+      ],
+      ingredients: [
+        { amount: 20,  
+          measurement: 'cup',
+          name: 'butter'
+        }
       ],
     });
 
@@ -142,6 +181,11 @@ describe('app routes', () => {
             'mix ingredients',
             'put dough on cookie sheet',
             'bake for 10 minutes'
+          ],
+          ingredients: [
+            { _id: expect.any(String), amount: 20,
+              measurement: 'cup',
+              name: 'butter' }
           ],
           __v: 0
         });
